@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E59E063E-A345-00B3-DCCD-9F649CFDDC37}</ProjectGuid>
+    <ProjectGuid>{C3832BF3-BF51-8A96-154A-C44CFCA60C00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,8 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EmptyClass.cs" />
-     <Compile Include="Assets\Low Polygon Potions Pack\Other Assets\Scripts\CreatePrefabFromSelected.cs" />
      <Compile Include="Assets\Scripts\_GM\CameraController.cs" />
      <Compile Include="Assets\Scripts\_GM\LevelManager.cs" />
      <Compile Include="Assets\Scripts\_GM\MusicManager.cs" />
@@ -61,8 +59,9 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyStats.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
-     <None Include="Assets\Low Polygon Potions Pack\Readme.txt" />
-     <None Include="Assets\Skeletan pack\SkeletonData\animations.txt" />
+     <Compile Include="Assets\Test Assets\Low Polygon Potions Pack\Other Assets\Scripts\CreatePrefabFromSelected.cs" />
+     <None Include="Assets\Test Assets\Low Polygon Potions Pack\Readme.txt" />
+     <None Include="Assets\Test Assets\Skeletan pack\SkeletonData\animations.txt" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>

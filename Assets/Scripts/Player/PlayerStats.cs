@@ -94,6 +94,13 @@ public class PlayerStats : MonoBehaviour {
         if(selectedUnit != null){
 
             Vector3 toTarget = (selectedUnit.transform.position - transform.position).normalized;
+			// Check if player is behind Enemy
+			if (Vector3.Dot (toTarget, selectedUnit.transform.forward) < 0) {
+				behindEnemy = false;
+			} else {
+				behindEnemy = true;
+			}
+
             // Calculate if the player is within attacking distance and facing enemy
             float distance = Vector3.Distance(this.transform.position, selectedUnit.transform.position);
             Vector3 targetDir = selectedUnit.transform.position - transform.position;
@@ -104,7 +111,7 @@ public class PlayerStats : MonoBehaviour {
                 canAttack = false;
             }
             else {
-                if(distance < 60){
+                if(distance < 2){
                     canAttack = true;
                 }
                 else {
