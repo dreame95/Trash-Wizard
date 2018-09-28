@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C3832BF3-BF51-8A96-154A-C44CFCA60C00}</ProjectGuid>
+    <ProjectGuid>{09122525-565B-8175-5F1D-9DF7D7FA60DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -51,17 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\_GM\CameraController.cs" />
-     <Compile Include="Assets\Scripts\_GM\LevelManager.cs" />
-     <Compile Include="Assets\Scripts\_GM\MusicManager.cs" />
-     <Compile Include="Assets\Scripts\_GM\OptionsController.cs" />
-     <Compile Include="Assets\Scripts\_GM\PlayerPrefsManager.cs" />
-     <Compile Include="Assets\Scripts\Enemies\EnemyStats.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
-     <Compile Include="Assets\Test Assets\Low Polygon Potions Pack\Other Assets\Scripts\CreatePrefabFromSelected.cs" />
-     <None Include="Assets\Test Assets\Low Polygon Potions Pack\Readme.txt" />
-     <None Include="Assets\Test Assets\Skeletan pack\SkeletonData\animations.txt" />
+     <Compile Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
@@ -161,10 +151,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/austinessinger/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{09122525-565B-8175-5F1D-9DF7D7FA60DD}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+	// movement variables
 	public float jumpSpeed = 30.0f;
 	public float gravity = 55.0f;
 	public float runSpeed = 70.0f;
 	private float walkSpeed = 90.0f;
 	private float rotateSpeed = 150.0f;
-
 	public bool grounded;
 	private Vector3 moveDirection = Vector3.zero;
 	private bool isWalking;
 	private string moveStatus = "idle";
 
+	// variables related to camera
 	public GameObject camera1;
 	public CharacterController controller;
 	public bool isJumping;
@@ -23,10 +23,16 @@ public class PlayerController : MonoBehaviour
 	public bool canJump = true;
 
 	public PlayerStats playerStatsSript;
+	public GameObject player;
+	// public GameObject lightGameObject = new GameObject("characterLight");
 
 	void Start ()
 	{
+		// test for area light around character
 
+		/*Light lightComp = lightGameObject.AddComponent<Light> ();
+		lightComp.color = Color.white;
+		lightGameObject.transform.position = player.transform.position; */
 
 		controller = GetComponent<CharacterController> ();
 	}
@@ -60,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
 			if (moveDirection != Vector3.zero)
 				moveStatus = isWalking ? "walking" : "running";
-
+				//lightGameObject.transform.position = player.transform.position;
 			if (Input.GetKeyDown (KeyCode.Space) && canJump) {
 				moveDirection.y = jumpSpeed;
 				isJumping = true;
